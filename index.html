@@ -2,11 +2,12 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" /> 
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My Portfolio</title>
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="mediaqueries.css" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   </head>
   <body>
     <nav id="desktop-nav">
@@ -14,7 +15,6 @@
       <div>
         <ul class="nav-links">
           <li><a href="#about">About</a></li>
-          <li><a href="#experience">Experience</a></li>
           <li><a href="#projects">Projects</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
@@ -30,7 +30,6 @@
         </div>
         <div class="menu-links">
           <li><a href="#about" onclick="toggleMenu()">About</a></li>
-          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
           <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
           <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
         </div>
@@ -41,7 +40,6 @@
         <img src="./assets/Headshot Profile.jpg" alt="Nathan Daniel profile picture" />
       </div>
       <div class="section__text">
-        <p class="section__text__p1">Hello, I'm</p>
         <h1 class="title">Nathan Daniel</h1>
         <p class="section__text__p2">Software Engineering Student</p>
         <div class="btn-container">
@@ -71,34 +69,27 @@
         </div>
       </div>
     </section>
+
+
     <section id="about">
-      <p class="section__text__p1">Get To Know More</p>
       <h1 class="title">About Me</h1>
       <div class="section-container">
-        <div class="section__pic-container">
-          <img
-            src="./assets/ActionShot.jpg"
-            alt="Profile picture"
-            class="about-pic"
-          />
-        </div>
         <div class="about-details-container">
           <div class="about-containers">
             <div class="details-container">
-              <img
-                src="./assets/experience.png"
-                alt="Experience icon"
-                class="icon"
-              />
+              <img src="./assets/experience.png" alt="Experience icon" class="icon"/>
               <h3>Experience</h3>
               <p>Prev Educational Technology Intern <br /> @ Queen's University OPDES</p>
             </div>
             <div class="details-container">
-              <img
-                src="./assets/education.png"
-                alt="Education icon"
-                class="icon"
-              />
+              <span class="material-icons icon">build</span>
+              <h3>Design Teams & Clubs</h3>
+              <li>Queen's Engineering Society</li>
+              <li>National Society of Black Engineers</li>
+              <li>Queen's Cryptography and Cybersecurity Club</li>
+            </div>
+            <div class="details-container">
+              <img src="./assets/education.png" alt="Education icon" class="icon"/>
               <h3>Education</h3>
               <p>BASc. Bachelor of Applied Science</p>
             </div>
@@ -126,143 +117,9 @@
             </p>
 
             <p>
-                Outside of academics and personal projects, I enjoy cooking food, playing sports, and following Formula 1. Feel free to 
+                Outside of academics and personal projects, I enjoy cooking food and practicing mixed martial arts. Feel free to 
                 explore my projects below, or connect with me on LinkedIn to collaborate or discuss opportunities.
             </p>
-          </div>
-        </div>
-      </div>
-      <img
-        src="./assets/arrow.png"
-        alt="Arrow icon"
-        class="icon arrow"
-        onclick="location.href='./#experience'"
-      />
-    </section>
-    <section id="experience">
-      <p class="section__text__p1">Explore My</p>
-      <h1 class="title">Experience</h1>
-      <div class="experience-details-container">
-        <div class="about-containers">
-          <div class="details-container">
-            <h2 class="experience-sub-title">Programming Languages</h2>
-            <div class="article-container">
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>C</h3>
-                  <p>Experienced</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>C++</h3>
-                  <p>Experienced</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Java</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>JavaScript</h3>
-                  <p>Basic</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Verilog</h3>
-                  <p>Basic</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Python</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-            </div>
-          </div>
-          <div class="details-container">
-            <h2 class="experience-sub-title">Developer Tools</h2>
-            <div class="article-container">
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>PostgreSQL</h3>
-                  <p>Basic</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Git</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Spring Boot</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>XML</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-            </div>
           </div>
         </div>
       </div>
@@ -273,6 +130,47 @@
         onclick="location.href='./#projects'"
       />
     </section>
+
+    <section id="skills">
+      <h1 class="title">My Tech Stack</h1>
+      <div class="logos">
+        <div class="logos-slide">
+          <img src="/assets/languages/JavaScript.png" alt="JavaScript">
+          <img src="/assets/languages/html.png" alt="HTML5">
+          <img src="/assets/languages/css.png" alt="CSS3">
+          <img src="/assets/languages/SQL.png" alt="SQL">
+          <img src="/assets/languages/Java.png" alt="Java">
+          <img src="/assets/languages/Python.png" alt="Python">
+          <img src="/assets/languages/C.png" alt="C">
+          <img src="/assets/languages/C++.png" alt="C++">
+          <img src="/assets/languages/PHP.png" alt="PHP">
+          <img src="/assets/languages/nextJS.png" alt="Next.JS">
+          <img src="/assets/languages/nodeJS.png" alt="Node.JS">
+          <img src="/assets/languages/express.png" alt="Express">
+          <img src="/assets/languages/springJPA.png" alt="Spring">
+          <img src="/assets/languages/React.png" alt="React">
+          <img src="/assets/languages/git.png" alt="Git">
+          <img src="/assets/languages/nvidia.png" alt="CUDA">
+          <img src="/assets/languages/gcp.png" alt="GCP">
+          <img src="/assets/languages/mongoDB.png" alt="MongoDB">
+          <img src="/assets/languages/PostgreSQL.png" alt="PostgreSQL">
+          <img src="/assets/languages/sqlite.png" alt="SQLite">
+          <img src="/assets/languages/mySQL.png" alt="MySQL">
+        </div>
+      </div>
+
+      <script>
+        var copy = document.querySelector(".logos-slide").cloneNode(true);
+        document.querySelector('.logos').appendChild(copy);
+      </script>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#projects'"
+      />
+    </section>
+
     <section id="projects">
       <p class="section__text__p1">Browse My Recent</p>
       <h1 class="title">Projects</h1>
@@ -478,7 +376,6 @@
         <div class="nav-links-container">
           <ul class="nav-links">
             <li><a href="#about">About</a></li>
-            <li><a href="#experience">Experience</a></li>
             <li><a href="#projects">Projects</a></li>
             <li><a href="#contact">Contact</a></li>
           </ul>
