@@ -452,7 +452,7 @@ article .icon {
   border-radius: 2rem;
   border: rgb(53, 53, 53) 0.1rem solid;
   border-color: rgb(163, 163, 163);
-  background: (250, 250, 250);
+  background: rgb(250, 250, 250);
   margin: 2rem auto;
   padding: 0.5rem;
 }
@@ -467,6 +467,8 @@ article .icon {
 
 .contact-info-container p {
   font-size: larger;
+  margin: 0;
+  line-height: 1;
 }
 
 .contact-icon {
